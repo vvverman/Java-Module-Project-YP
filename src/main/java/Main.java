@@ -32,17 +32,19 @@ public class Main {
 
 
 
-
+// Это вроде работает, разбирается с проблемой "-бля"
 
         String result = String.format("%.2f", count);
 
         double formattedResult = Double.parseDouble(result.replace(',','.'));
-        String rubString = GetRubleAddition(formattedResult);
+        String rubString = getRubleAddition(formattedResult);
 
         System.out.println("Каждый должен заплатить: " + result + " " + rubString);
         System.out.println(listProduct);
 
         scanner.close();
+
+        // Это вроде работает, разбирается с проблемой "-бля"
 
     }
 
@@ -118,7 +120,7 @@ public class Main {
 
 // МЕТОД НИЖЕ РАЗБИРАЕТСЯ С ПРОБЛЕМОЙ "-БЛЯ"
 
-    public static String GetRubleAddition(double formattedResult) {
+    public static String getRubleAddition(double formattedResult) {
 
     }
     int lastCharacter = (int) (Math.floor(formattedResult) % 10);
