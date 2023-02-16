@@ -8,7 +8,6 @@ public class Main {
         System.out.println("На сколько персон разделить счёт, Господа?");
 
         Scanner scanner = new Scanner(System.in);
-
         int number = scanner.nextInt();
         countPersons(int number);
 
@@ -61,7 +60,7 @@ public class Main {
     // МЕТОД НИЖЕ ДОБИВАЕТСЯ НОРМАЛЬНОГО КОЛИЧЕСТВА ПЕРСОН, НА КОТОРЫХ БУДУТ ДЕЛИТЬ СЧЁТ
     public static int countPersons(int number) {
 
-        while (true) {
+        while (scanner.hasNextInt()) {
 
 
             if (number == 1) {
